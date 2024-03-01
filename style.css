@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 98%;
+    height: 100vh;
+    /* background-color: yellow; */
+    margin: auto;
+}
+.header{
+    width: 100%;
+    height:60px;
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width:4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-size: 35px;
+   color: red;
+}
+.items{
+    width:20%;
+    /* height:30px ; */
+}
+.items ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+}
+.items ul li{
+    display: inline;
+}
+#search{
+    width:69%;
+    position: relative;
+}
+#search input{
+    z-index: 2;
+    width: 100%;
+    height: 40px;
+    border-radius:25px;
+    border: none;
+    outline: none;
+    background-color: #e1e1e1;
+    padding-left: 20px;
+    font-size: 16px;
+    /* position:relative; */
+}
+
+.items-logo{
+    width:12%;
+    /* height: 30px; */
+}
+.items-logo ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+}
+.items-logo ul li{
+    display: inline;
+}
+.items-logo ul li i {
+    width: 20px;
+    height: 30px; /* Set the height of the <i> elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#search-box{
+    width: 90%;
+    height: 40vh;
+    margin: -10px auto 0 auto;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+    left:5%;
+    display: none;
+}
+.search-res{
+    padding-left:20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-images{
+    width: auto;
+    height:auto;
+    /* display: flex; */
+    column-count:5;
+    column-gap:10px;
+}
+.box{
+    width: 100%;
+    height:auto;
+}
+.cursor-pointer{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* object-fit: cover; */
+}
+#cartbody{
+    width: 400px;
+    height: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index:5;
+    position: absolute;
+    right: 0;
+    margin-top: -10px;
+    display: none;
+    column-count: 3;
+    column-gap:10px;
+}
+#cartbody img{
+    width: 60%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#cart-image{
+    width: 50%;
+    height:auto;
+    display: flex;
+    column-count:5;
+    column-gap:10px;
+}
+/* .cart-image img{
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+} */
+#count{
+    position: absolute;
+    top: 2%;
+}
+.cursor-pointer:hover{
+    opacity: 0.4;
+    background-color:#000;
+}
+.container-image{
+    position: relative;
+    overflow: hidden;
+}
+.image-overlay{
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.image-overlay p{
+    font-size: 28px;
+    color: #ffff;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image-overlay button{
+    padding: 8px 14px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.image-overlay:hover{
+    opacity:1;
+}
