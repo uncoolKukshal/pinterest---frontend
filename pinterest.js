@@ -76,7 +76,7 @@ const addtocart = (imageData)=>{
 }
 // json data
 const getData = () => {
-  fetch("images.json")
+  fetch("pinterest.json")
     .then((Response) => Response.json())
     .then((data) => {
       image = data;
